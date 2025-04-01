@@ -1,0 +1,12 @@
+{
+    "name": "PYJS",
+    "description": "Work on the Pay Up web",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["https://payup.video/tasks/videoExtYT/"],
+            "js": ["script.js"]
+        }
+    ]
+}
