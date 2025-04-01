@@ -1,6 +1,6 @@
 {
     "name": "PYJS",
-    "description": "Work on the Pay Up web",
+    "description": "Work on the Pay Up web task youtube",
     "version": "0.0.1",
     "manifest_version": 2,
     "content_scripts": [
