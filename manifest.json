@@ -1,12 +1,18 @@
 {
-    "name": "PYJS",
-    "description": "Work on the Pay Up web task youtube",
-    "version": "0.0.1",
-    "manifest_version": 2,
-    "content_scripts": [
-        {
-            "matches": ["https://payup.video/tasks/videoExtYT/"],
-            "js": ["script.js"]
-        }
-    ]
+  "manifest_version": 3,
+  "name": "aviso Task Bot",
+  "version": "1.0",
+  "description": "إضافة تقوم تلقائياً بمشاهدة الفيديوهات وتأكيدها في موقع",
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["https://aviso.bz/tasks-youtube"],
+  "content_scripts": [
+    {
+      "matches": ["https://aviso.bz/task-youtube"],
+      "js": ["script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
 }
